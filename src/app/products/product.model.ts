@@ -18,3 +18,7 @@ export interface Product extends BaseModel {
   isNew: boolean;
   tags: string[];
 }
+
+// Utility types Omit / Pick
+
+// type CreateProductDTO = Omit<Product, 'id' | 'createdAt' | 'updatedAt' | 'category'>
