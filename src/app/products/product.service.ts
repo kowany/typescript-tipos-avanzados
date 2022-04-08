@@ -56,5 +56,10 @@ export const getProduct = (id:string): Product | null {
 
 export const findProduct = (dto: FindProductDto): Product[] => {
   // code
+  // dto.color = 'blue';
+  // dto.isNew = false;
+  // dto.tags = [];
+  // dto.tags?.pop();
+  // dto.tags?.push('d');
   return products;
 }
