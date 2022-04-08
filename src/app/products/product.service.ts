@@ -1,6 +1,6 @@
 import faker from "@faker-js/faker";
-import { CreateProductDto, UpdateProductDto } from "./product.dto";
-import { Product } from "./product.model";
+import { CreateProductDto, FindProductDto, UpdateProductDto } from "./product.dto";
+import { Product } from './product.model';
 
 export const products: Product[] = [];
 
@@ -54,4 +54,7 @@ export const getProduct = (id:string): Product | null {
   return product;
 }
 
-
+export const findProduct = (dto: FindProductDto): Product[] => {
+  // code
+  return products;
+}
